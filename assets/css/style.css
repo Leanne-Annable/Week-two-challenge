@@ -70,7 +70,6 @@
 
 
   /* layout for the secondary header - image strip */
-
   .hero-banner{
     background-image: url('../images/anime-mashup-cut.jpg');
     background-repeat: no-repeat;
@@ -100,7 +99,6 @@
 
 
   /* the about me section - photo and paragraph with info */
-
   .section-title{
     font-size: 1.5em;
     text-align: right;
@@ -145,7 +143,7 @@
     align-items: flex-start;
     justify-content: flex-start;
   }
-  
+  /* aligns the work projects in a 2x3 grid */
   .work{
     display: grid;
     grid-template-rows: 300px 300px 300px;
@@ -197,12 +195,6 @@
     text-decoration: none;
   }
 
- /* a hover setting to brighten the images when selecting */
-  .work-links:hover{
-    filter:brightness(100%);
-    transition: filter 0.7s ease-in;
-  }
-
   .heading{
     padding: 5px;
     color: black;
@@ -211,6 +203,14 @@
     background-color: rgba(170, 0, 0, 0.9);
     border-radius: 25px;
   }
+
+ /* a hover setting to brighten the images when selecting */
+  .work-links:hover{
+    filter:brightness(100%);
+    transition: filter 0.7s ease-in;
+  }
+
+
 
 
 
@@ -244,7 +244,7 @@
 
 
 
-  /* media changes */
+  /* media changes  for 1000px screen - tablets etc*/
   @media only screen and (max-width: 1000px) {
 
 
@@ -276,7 +276,7 @@
 
 
 
-
+/* media changes for smaller <=680px screens - phones*/
   @media only screen and (max-width: 680px) {
 
     .header h1{
@@ -311,7 +311,7 @@
       writing-mode:vertical-rl;
       margin-top: 3%;
     }
-
+/* aligns the work tabs to be inline instead of multiple columns */
     .work {
       display: grid;
       grid-template-rows: repeat(5, 220px);
