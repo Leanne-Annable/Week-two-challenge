@@ -101,7 +101,7 @@
   /* the about me section - photo and paragraph with info */
 
   .section-title{
-    font-size: 1.5rem;
+    font-size: 1.5em;
     text-align: right;
     padding-right: 0.5%;
     padding-top: 2%;
@@ -218,7 +218,7 @@
     list-style-type: none;
     text-align: center;
     justify-content: space-evenly;
-    font-size: 1.5em;
+    font-size: 1.2em;
     padding-top: 2%;
     padding-bottom: 2%;
   }
@@ -242,7 +242,7 @@
 
 
   /* media changes */
-  @media only screen and (max-width: 1000px) {
+  @media only screen and (max-width: 900px) {
 
 
     .header h1 {
@@ -261,4 +261,19 @@
     p {
       font-size: 1.2em;
     }
+
+    .section-title{
+      font-size: 1.1em;
+    }
+
+    #contact ul{
+      font-size: 1em;
+    }
+  }
+
+
+
+
+  @media only screen and (max-width: 640px) {
+
   }
